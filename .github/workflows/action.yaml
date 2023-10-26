@@ -4,7 +4,11 @@ on:
   push:
     branches:
       - main
-
+      - ekungs-b
+  pull_rquest:
+    branches:
+      - main
+    
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -16,7 +20,7 @@ jobs:
         with:
           python-version: 3.8
       - name: Install libraries
-        run: |
+        run: | # add this pip if u have multi line commands to run. then list them as below
             cd function
             python -m pip install --upgrade pip
             If [ -f requirements.txt ]; then pip install -r requirements.txt -t .; fi
