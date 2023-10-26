@@ -19,7 +19,7 @@ jobs:
         run: |
             cd function
             python -m pip install --upgrade pip
-            If -f requirements.txt ]; then pip install -r requirements.txt -t .; fi
+            If [ -f requirements.txt ]; then pip install -r requirements.txt -t .; fi
       - name: Create zip bundle
         run: |
             cd function
