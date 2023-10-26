@@ -5,7 +5,7 @@ on:
     branches:
       - main
       - ekungs-b
-  pull_rquest:
+  pull_request:
     branches:
       - main
     
